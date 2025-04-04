@@ -11,7 +11,7 @@ function Button(){
     };
     return(
 
-        <button onClick={()=>handleClick("mucyo")}>click me </button>
+        <button onClick={()=>handleClick("mucyo")}>click </button>
     );
 
 
