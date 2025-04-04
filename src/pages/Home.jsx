@@ -1,7 +1,7 @@
 const Home=()=>{
     return (
-        <div>
-            <h2>This is Home page wangu</h2>
+        <div className="all images">
+               <img src="b1.jpg" alt="" />
         </div>
     );
 }

@@ -20,6 +20,9 @@ import CountEff from "./CountEff.jsx";
 import NewForm from "./components/NewForm.jsx";
 import Watch from "./Watch.jsx";
 import { Watch1 } from "./DigitalWatch.jsx";
+import Shop from "./pages/Shop.jsx";
+import May from "./pages/Mayhelp.jsx";
+import Find from "./pages/Find.jsx";
 
 
 
@@ -30,7 +33,7 @@ function App() {
  
   return (
       
-    <div >
+    <div className="allconatiner">
         <Navbar />
    <div className="container">
         
@@ -49,14 +52,23 @@ function App() {
       
       
       </Routes>   </div>
-      <Thiss/>
+      {/* <Thiss/>
       <CountEff/>
       <br /><br />
-      <NewForm/>
+      <NewForm/> */}
       <br />
       <br />
-      <Watch/>
-      <Watch1/>
+      {/* <Watch/> */}
+      {/* <Watch1/><br /> */}
+      <br />
+
+      <div className="Footer">
+
+
+        <Shop/>
+        <May/>
+        <Find/>
+      </div>
              </div> 
  );
     

@@ -5,13 +5,15 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 8%;
-    background-color: aliceblue;
+    background-color: rgb(1, 42, 69);
+   
+    position: sticky;
     
 }
 .navbar ul{
     padding: 10px 10px;
     border-radius: 10px;
-    box-shadow: 0 0 30px rgb(180, 180, 180);
+    /* box-shadow: 0 0 30px rgb(180, 180, 180); */
 
 }
 .navbar ul li{
@@ -19,6 +21,7 @@
     padding: 6px 10px;
     margin: 0 10px;
     font-size: 20px;
+    color: rgb(198, 174, 128);
    
    
 
@@ -64,4 +67,26 @@ a.active{
     font-weight: bold;
     box-shadow: 0 0 30px rgb(180, 180, 180);
   
+}
+.Footer{
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+     padding: 20px 10%;
+     background-color: black;
+     color: white;
+     font-size: 15px;
+}
+.Footer h4{
+    font-size: 18px;
+    color: rgb(145, 145, 145);
+}
+
+.Inputn{
+    border: none;
+    outline: none;
+    padding: 0.5em;
+}
+.Footer li{
+    list-style: none;
 }
