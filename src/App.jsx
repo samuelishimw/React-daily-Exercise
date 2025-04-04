@@ -19,6 +19,7 @@ import Thiss from "./Thiss.jsx";
 import CountEff from "./CountEff.jsx";
 import NewForm from "./components/NewForm.jsx";
 import Watch from "./Watch.jsx";
+import { Watch1 } from "./DigitalWatch.jsx";
 
 
 
@@ -55,6 +56,7 @@ function App() {
       <br />
       <br />
       <Watch/>
+      <Watch1/>
              </div> 
  );
     
