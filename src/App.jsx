@@ -25,6 +25,7 @@ import May from "./pages/Mayhelp.jsx";
 import Find from "./pages/Find.jsx";
 import UsEffect from "./Revision.jsx";
 import GithubUserSearch from "./Fetch.jsx";
+import TodoList from "./components/TodoList.jsx";
 
 
 
@@ -64,8 +65,12 @@ function App() {
       {/* <Watch1/><br /> */}
       <br />
 
+      <TodoList/>
+
+      <br /><br />
 <UsEffect/>
 <GithubUserSearch/>
+
       <div className="Footer">
 
 
