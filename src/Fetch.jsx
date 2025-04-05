@@ -7,7 +7,7 @@ function GithubUserSearch() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (query === '') return; // Don't fetch if input is empty
+    if (query === '') return;
 
     const fetchUsers = async () => {
       setLoading(true);
@@ -29,7 +29,7 @@ function GithubUserSearch() {
     };
 
     fetchUsers();
-  }, [query]); // Dependency Array -> Runs when query changes
+  }, [query]); 
 
   return (
     <div>
