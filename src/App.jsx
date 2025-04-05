@@ -23,6 +23,7 @@ import { Watch1 } from "./DigitalWatch.jsx";
 import Shop from "./pages/Shop.jsx";
 import May from "./pages/Mayhelp.jsx";
 import Find from "./pages/Find.jsx";
+import UsEffect from "./Revision.jsx";
 
 
 
@@ -62,6 +63,7 @@ function App() {
       {/* <Watch1/><br /> */}
       <br />
 
+<UsEffect/>
       <div className="Footer">
 
 
