@@ -24,6 +24,7 @@ import Shop from "./pages/Shop.jsx";
 import May from "./pages/Mayhelp.jsx";
 import Find from "./pages/Find.jsx";
 import UsEffect from "./Revision.jsx";
+import GithubUserSearch from "./Fetch.jsx";
 
 
 
@@ -64,6 +65,7 @@ function App() {
       <br />
 
 <UsEffect/>
+<GithubUserSearch/>
       <div className="Footer">
 
 
