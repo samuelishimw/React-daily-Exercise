@@ -2,41 +2,46 @@ import { useState } from "react";
 
 const TodoList=()=>{
     
-    const [tasks,setTasks]=useState(["Mango four G","Trip threat","Ongo back"]);
-    const [newtask,setNewTask]=useState("");
+ const [task,setTask]=useState(["mango","pinaple","orange"]);
+ const [newtask,setNewTask]=useState("")
 
-       const HandleInput=(event)=>{
-        setNewTask(event.target.value)
+ const handlechange=(e)=>{
+    setNewTask(e.target.value);
+ }
+
+const add=()=>{
+    if(newtask.trim() !==""){
+        setTask(t=>[...t,newtask])
         setNewTask("")
 
-       }
+    }
+    
+}
+ const remove=(index)=>{
+    const upadate=task.filter((_,i)=>i !==index);
+    setTask(upadate)
 
-       const addTask=()=>{
-        setTasks(t=>[...t,newtask])
-        setNewTask("")
+ }
+    
+
         
-
-       }
-
-       const removeTask=()=>{
-
-        
-       }
+       
     return(
         <>
-        <div>
-            <p>To do list</p>
+        <p>To do list</p>
+       <div>
+   
+       <input type="text" value={newtask} onChange={handlechange} placeholder="Enter your value" />
+       <button onClick={add}>Add</button>
 
-            <input type="text" value={newtask} onChange={HandleInput} placeholder="Enter your task" />
-            <button>Add</button></div>
-            <div>
-                <ol>
-                    {tasks.map((element,index)=><li key={index}>{index}
-                        <button onClick={()=>removeTask(index)}>delete</button>
-                        <button onClick={()=>removeTask(index)}>delete</button>
-                    </li>)}
-                </ol>
-            </div>
+       </div>
+             <ol>
+                {task.map((Elemen,index)=><li key={index}>{Elemen}
+                        
+               <button onClick={()=>remove(index)}>remove</button>
+
+                </li>)}
+             </ol>
 
         </>
 
