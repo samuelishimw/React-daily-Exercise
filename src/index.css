@@ -95,3 +95,36 @@ a.active{
     grid-template-columns: repeat(2,1fr);
     gap: 1cm;
 }
+.box{
+    padding:30px;
+    border: 3px solid;
+
+}
+
+.calcul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 19.5%;
+    height: 180px;
+    margin-top: 0.2cm;
+   
+    
+
+}
+.in{
+    width: 17.5%;
+   padding: 0.8em;
+   background-color: rgb(209, 202, 203);
+   color: rgb(0, 0, 0);
+   
+
+
+}
+.allca{
+    justify-content: space-between;
+    align-items: center;
+}
+.calcul button{
+    background-color: rgb(26, 27, 31);
+    color: white;
+}

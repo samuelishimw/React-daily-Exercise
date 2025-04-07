@@ -26,6 +26,9 @@ import Find from "./pages/Find.jsx";
 import UsEffect from "./Revision.jsx";
 import GithubUserSearch from "./Fetch.jsx";
 import TodoList from "./components/TodoList.jsx";
+import ComponentA from "./context/CompontA.jsx";
+import Formm from "./Form.jsx";
+import Calculate from "./Layout/Calculate.jsx";
 
 
 
@@ -55,19 +58,24 @@ function App() {
       
       
       </Routes>   </div>
+
+
+      <Calculate/>
       {/* <Thiss/>
       <CountEff/>
       <br /><br />
-      <NewForm/> */}
+      <NewForm/> }
       <br />
       <br />
       {/* <Watch/> */}
       {/* <Watch1/><br /> */}
       <br />
+      <Formm/>
 
       <TodoList/>
 
       <br /><br />
+      <ComponentA/>
 <UsEffect/>
 <GithubUserSearch/>
 
